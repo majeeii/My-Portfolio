@@ -1,0 +1,260 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #222222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: #eeeeee;
+    background-color: #777676;
+    box-shadow: 0 4px 6px -1px rgba(111, 110, 110, 0.441);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 16px;
+}
+
+.navbar a{
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    background-color: #5b5a5a;
+}
+
+/* Sections */
+.content-section {
+    padding: 5rem 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bg-light {
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #555555;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #222222;
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #222222;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #222222;
+}
+
+.btn-outline:hover {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.placeholder-image {
+    width: 250px;
+    height: 250px;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999999;
+    border: 1px solid #dddddd;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    padding: 2rem;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    color: #666666;
+    margin-bottom: 1.5rem;
+}
+
+.project-card a {
+    font-weight: bold;
+    border-bottom: 1px solid #222222;
+    padding-bottom: 2px;
+}
+
+/* --- Expanded Footer Styles --- */
+.site-footer {
+    background-color: #fcfcfc;
+    border-top: 1px solid #eeeeee;
+    padding: 4rem 5% 1rem;
+    color: #222222;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.footer-section p {
+    color: #666666;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #666666;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #222222;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eeeeee;
+    color: #999999;
+    font-size: 0.85rem;
+}
+
+/* Make footer stack neatly on smaller screens */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}

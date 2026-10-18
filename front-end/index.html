@@ -3,9 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <header class="navbar">
+        <div class="logo">Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <h1>Hello, I'm Mark Jefferson Baccay.</h1>
+            <p>Welcome to my digital space.</p>
+            <a href="#projects" class="btn">View My Projects</a>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="placeholder-image">
+                    <!-- You can put a simple vector graphic or picture here -->
+                    <span>Image Slot</span>
+                </div>
+                <p>I focus on clean, functional web development and information systems. I enjoy building structured, user-friendly interfaces and organizing data efficiently.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section bg-light">
+            <h2>Selected Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project One</h3>
+                    <p>A web-based application focused on inventory management and responsive UI.</p>
+                    <a href="#">View Repository</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project Two</h3>
+                    <p>A landing page featuring team profiles and semantic markup.</p>
+                    <a href="#">View Repository</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Get In Touch</h2>
+            <p>Interested in collaborating? Feel free to reach out.</p>
+            <a href="mailto:email@example.com" class="btn btn-outline">Send an Email</a>
+        </section>
+    </main>
+
+ <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h4>About</h4>
+                <p>Building clean, responsive user interfaces and focusing on efficient data organization. Dedicated to structured, functional web development.</p>
+            </div>
+            
+            <div class="footer-section contact">
+                <h4>Contact</h4>
+                <p>Email: baccaymarkjefferson.pdm@gmail.com</p>
+            </div>
+            
+            <div class="footer-section socials">
+                <h4>Socials</h4>
+                <ul>
+                    <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
+                    <li><a href="#" target="_blank">Behance</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
