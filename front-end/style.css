@@ -60,7 +60,7 @@ a {
 
 /* Sections */
 .content-section {
-    padding: 5rem 5%;
+    padding: 100px 5%;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -116,16 +116,6 @@ h2 {
     color: #222222;
 }
 
-.btn-outline {
-    background-color: transparent;
-    color: #222222;
-}
-
-.btn-outline:hover {
-    background-color: #222222;
-    color: #ffffff;
-}
-
 /* About Section */
 .about-content {
     display: flex;
@@ -178,12 +168,12 @@ h2 {
     padding-bottom: 2px;
 }
 
-/* --- Expanded Footer Styles --- */
 .site-footer {
-    background-color: #fcfcfc;
-    border-top: 1px solid #eeeeee;
+    background-color: #c0bebe;
+    box-shadow: 0 4px 6px -1px rgba(111, 110, 110, 0.441);
+    margin-top: 100px;
     padding: 4rem 5% 1rem;
-    color: #222222;
+    color: #eeeeee;
 }
 
 .footer-container {
@@ -236,12 +226,11 @@ h2 {
 .footer-bottom {
     text-align: center;
     padding-top: 1.5rem;
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid #0b0a0a;
     color: #999999;
     font-size: 0.85rem;
 }
 
-/* Make footer stack neatly on smaller screens */
 @media (max-width: 600px) {
     .footer-container {
         flex-direction: column;
