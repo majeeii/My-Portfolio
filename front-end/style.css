@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #E7E2D3;
     color: #222222;
     line-height: 1.6;
 }
@@ -30,7 +30,7 @@ a {
     top: 0;
     z-index: 1000;
     color: #eeeeee;
-    background-color: #777676;
+    background-color: #C3B091;
     box-shadow: 0 4px 6px -1px rgba(111, 110, 110, 0.441);
 }
 
@@ -180,7 +180,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 5rem;
     max-width: 1000px;
     margin: 0 auto;
     margin-bottom: 3rem;
