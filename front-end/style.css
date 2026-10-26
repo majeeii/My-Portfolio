@@ -29,7 +29,7 @@ a {
     top: 0;
     z-index: 1000;
     color: #3F362B;
-    background-color: #C3B091;
+    background-color: #e2c7ac;
     box-shadow: 0 4px 6px -1px rgba(111, 110, 110, 0.441);
 }
 
@@ -75,14 +75,15 @@ h2 {
 }
 
 .hero-section {
-    height: 70vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 5%;
+    padding: 0 3%;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 40px auto 0;
+    border-radius: 5px;
 }
 
 .hero-section h1 {
@@ -140,35 +141,96 @@ h2 {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
 }
 
 .project-card {
-    padding: 2rem;
-    border: 1px solid #dddddd;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
     background-color: #ffffff;
-    transition: transform 0.2s ease;
+    border: 1px solid #e4dccd;
+    border-radius: 18px;
+    box-shadow: 0 4px 14px rgba(63, 54, 43, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    border-color: #c3b091;
+    box-shadow: 0 16px 30px rgba(63, 54, 43, 0.18);
 }
 
-.project-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+.project-thumb {
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    border-bottom: 1px solid #ece5d8;
+    background-color: #efe9dd;
 }
 
-.project-card p {
-    color: #666666;
-    margin-bottom: 1.5rem;
+.project-thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.45s ease;
 }
 
-.project-card a {
-    font-weight: bold;
-    border-bottom: 1px solid #222222;
-    padding-bottom: 2px;
+.project-card:hover .project-thumb img {
+    transform: scale(1.05);
+}
+
+.project-card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.4rem 1.5rem 1.6rem;
+}
+
+.project-card-body h3 {
+    margin: 0;
+    color: #3F362B;
+    font-size: 1.25rem;
+    line-height: 1.35;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    width: fit-content;
+    margin-top: auto;
+    padding-bottom: 3px;
+    border-bottom: 1px solid transparent;
+    color: #6b5d4a;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.project-link .project-arrow {
+    transition: transform 0.2s ease;
+}
+
+.project-link:hover {
+    color: #3F362B;
+    border-color: #3F362B;
+}
+
+.project-link:hover .project-arrow {
+    transform: translateX(4px);
+}
+
+.project-thumb:focus-visible,
+.project-link:focus-visible {
+    outline: 3px solid #c3b091;
+    outline-offset: 3px;
 }
 
 .site-footer {

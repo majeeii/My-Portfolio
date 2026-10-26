@@ -1,0 +1,40 @@
+/* Floating "Back to Portfolio" button for activity pages */
+.back-to-portfolio {
+    position: fixed;
+    left: 24px;
+    top: 24px;
+    z-index: 9999;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 28px;
+    background-color: #3F362B;
+    color: #E7E2D3 !important;
+    border: 1px solid #3F362B;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(63, 54, 43, 0.35);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-to-portfolio:hover {
+    background-color: #E7E2D3;
+    color: #3F362B !important;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(63, 54, 43, 0.45);
+}
+
+@media (max-width: 600px) {
+    .back-to-portfolio {
+        left: 16px;
+        top: 16px;
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+}
