@@ -120,14 +120,14 @@ h2 {
 }
 
 .placeholder-image {
-    width: 250px;
+    width: 400px;
     height: 250px;
-    background-color: #eeeeee;
+    background-color: #3F362B;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #999999;
     border: 1px solid #dddddd;
+    border-radius: 20px;
     overflow: hidden;
 }
 

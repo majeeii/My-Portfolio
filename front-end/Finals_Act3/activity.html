@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<style>
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        background-color: burlywood;
+    }
+
+    .card{
+        background-color: azure;
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 4px 4px 8px;
+        border-radius: 40px;
+    }
+
+    .card1{
+        background-color: beige;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: left;
+    }
+
+    .content{
+        flex-direction: row;
+    }
+
+    .card2{
+        background-color: beige;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 15px;
+        font-style: italic;
+    }
+
+    button{
+        color: azure;
+        background-color: black;
+        padding: 15px 25px;
+        border-radius: 15px;
+        border: none;
+    }
+
+    .title{
+        text-align: left;
+    }
+
+    select {
+        background-color: #f0f0f0;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 10px;
+        font-size: 13px;
+        color: #333;
+        width: 500px;
+        }
+
+    table{
+        width: 40%;
+        height: 130px;
+    }
+
+</style>
+
+<body>
+    <div class="card">
+        <h1 id="message">Hello!</h1>
+        <p>welcome to my interactive profile!</p>
+
+        <div class="card1" id="c1">
+
+            <h1>Student Information</h1>
+            
+            <div class="content">
+
+                <p>Name:<b id="msg1">Mark Jefferson Baccay</b></p>
+                <p>Course:<b id="msg2">Bachelor Science in Information Technology</b></p>
+                <p>Year level:<b id="msg3">3rd Year</b></p>
+
+            </div>
+
+        </div>
+
+        <button id="btn1">Change title</button>
+        <button id="btn2">Show</button>
+        <button id="btn3">Hide</button>
+
+        <p id="mess" class="card2"> mouse activity </p>
+        <hr style="width: 95%;">
+
+        <div class="card3">
+
+            <h1 class="title">Choose you Course</h1>
+            
+            <select id="course">
+                <option value="Bachelor of Science in Information Technology">SELECT A COURSE</option>
+                <option value="Bachelor of Science in Information Technology">BSIT</option>
+                <option value="Bachelor of Science in Computer Science">BSCS</option>
+            </select>
+
+        </div>
+
+        <p id="mess2" class="card2"> Select a course </p>
+        <hr style="width: 95%;">
+
+        <h1 class="title">Student list</h1>
+
+        <table id="tbl" align="center">
+            <tr>
+                <th>Name</th>
+                <th>Section</th>
+                <th>Time</th> 
+                <th>Course</th> 
+            </tr>
+
+            <tr> 
+                <td>jake Letherwood</td> 
+                <td>Section C</td> 
+                <td>4:40pm</td> 
+                <td>BSIT</td> 
+            </tr>
+
+            <tr> 
+                <td>Maria Leonora</td> 
+                <td>Section A</td> 
+                <td>2:20pm</td> 
+                <td>BSCS</td> 
+            </tr>
+
+            <tr> 
+                <td>Conor Altorino</td> 
+                <td>Section B</td> 
+                <td>1:20pm</td> 
+                <td>BSOA</td> 
+            </tr>
+
+            <tr> 
+                <td>Kaloy Demario</td> 
+                <td>Section E</td> 
+                <td>7:30am</td> 
+                <td>BTLED</td> 
+            </tr>
+
+        </table>
+
+        <br><br>
+
+        <button id="btn4">Change Color Even</button>
+        <button id="btn5">Change Color Odd</button>
+
+    </div>
+
+    <script src="script_act.js"></script>
+</body>
+</html>
