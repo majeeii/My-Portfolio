@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 90px;
 }
 * {
     margin: 0;
@@ -64,6 +64,10 @@ a {
     border-radius: 20px;
 }
 
+.content-section p {
+    font-size: 25px;
+}
+
 .bg-light {
     background-color: #f9f9f9;
 }
@@ -75,6 +79,16 @@ h2 {
     letter-spacing: 2px;
 }
 
+#about.content-section {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#about h2 {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .hero-section {
     height: 60vh;
     display: flex;
@@ -84,8 +98,24 @@ h2 {
     padding: 0 3%;
     max-width: 1000px;
     margin: 40px auto 0;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: wheat;
+    box-shadow: 0 4px 6px -1px rgba(111, 110, 110, 0.441);
+}
+
+.nav-transition {
+    animation: nav-section-reveal 0.65s ease-out both;
+}
+
+@keyframes nav-section-reveal {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero-section h1 {
@@ -115,22 +145,27 @@ h2 {
     color: #222222;
 }
 
-/* About Section */
 .about-content {
     display: flex;
-    gap: 3rem;
+    gap: 2.5rem;
     align-items: center;
+    padding: 2.5rem;
+    background-color: #fbf8f1;
+    border: 1px solid #ded4c2;
+    border-radius: 20px;
+    box-shadow: 0 10px 24px rgba(63, 54, 43, 0.08);
+    margin: 0 auto;
 }
 
 .placeholder-image {
-    width: 400px;
-    height: 250px;
-    background-color: #3F362B;
+    flex: 0 0 280px;
+    width: 280px;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #dddddd;
-    border-radius: 20px;
+    border-radius: 16px;
+
     overflow: hidden;
 }
 
@@ -308,8 +343,25 @@ h2 {
 @media (max-width: 768px) {
     .about-content {
         flex-direction: column;
+        gap: 1.75rem;
+        padding: 1.75rem;
+    }
+    .placeholder-image {
+        flex: 0 0 auto;
+        width: min(260px, 100%);
+        height: auto;
+        aspect-ratio: 1;
     }
     .hero-section h1 {
         font-size: 2.5rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    .nav-transition {
+        animation: none;
     }
 }
