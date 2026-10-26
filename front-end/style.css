@@ -61,6 +61,7 @@ a {
     padding: 100px 5%;
     max-width: 1000px;
     margin: 0 auto;
+    border-radius: 20px;
 }
 
 .bg-light {
@@ -206,7 +207,6 @@ h2 {
     margin-top: auto;
     padding-bottom: 3px;
     border-bottom: 1px solid transparent;
-    border-radius: 20px;
     color: #6b5d4a;
     font-size: 0.8rem;
     font-weight: 700;
