@@ -29,7 +29,7 @@ a {
     position: sticky;
     top: 0;
     z-index: 1000;
-    color: #eeeeee;
+    color: #3F362B;
     background-color: #C3B091;
     box-shadow: 0 4px 6px -1px rgba(111, 110, 110, 0.441);
 }
@@ -54,8 +54,8 @@ a {
 }
 
 .navbar a:hover {
-    color: #ffffff;
-    background-color: #5b5a5a;
+    color: #E7E2D3;
+    background-color: #3F362B;
 }
 
 /* Sections */
